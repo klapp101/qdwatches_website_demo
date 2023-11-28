@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Your Jewelry Company</title>
+      <link rel="stylesheet" href="index_test.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   </head>
+   <body>
+    <header>
+        <div class="topnav">
+           <!-- Navigation links (hidden by default) -->
+             <div id="nav-links">
+                <a href="index_test.htm">Home</a>
+                <a href="redesigned_diamondquote.htm">Sell a Diamond</a>
+                <a href="sellYourJewelry_test.html">Sell Jewelry</a>
+                <a href="watchQuote_test.htm">Sell a Fine Watch</a>
+                <a href="sellYourHandbag_test.html">Sell Handbag</a>
+                <a href="contact_test.html">Contact Us</a>
+             </div>
+           <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+           <a href="javascript:void(0);" class="hamburger-menu" onclick="toggleNav()">
+           <i class="fa fa-bars"></i>
+           </a>
+        </div>
+     </header>
+     <div class="center-image">
+        <img src="Images/banner_remove_bg.png" alt="Banner Image" class="desktop-image">
+     </div>
+      <main class="quote-form-section">
+        <div class="services">
+            <div class="services-header">
+               <h1>Get a Free Watch Quote</h1>
+               <h2>Fill out our easy to use form and get a free and immediate quote on your watch today.</h2>
+            </div>
+            <form action="ughsoutW.php" method="post">
+                <div class="form-group">
+                    <label for="watchBrand">Watch Brand:</label>
+                    <select name="brand" id="select" >
+                        <option selected="selected">Please select</option>
+                        <option class="special" value="Rolex">Rolex</option>
+                        <option value="Cartier">Cartier</option>
+                        <option value="Patek Philippe">Patek Philippe</option>
+                        <option value="Breitling">Breitling</option>
+                        <option value="A. Lange &amp; Sohne">A. Lange &amp; Sohne</option>
+                        <option value="Audemars Piguet">Audemars Piguet</option>
+                        <option value="Baume &amp; Mercier">Baume &amp; Mercier</option>
+                        <option value="Bell &amp; Ross">Bell &amp; Ross</option>
+                        <option value="Blancpain">Blancpain</option>
+                        <option value="Bovet">Bovet</option>
+                        <option value="Breguet">Breguet</option>
+                        <option value="BVLGARI">BVLGARI</option>
+                        <option value="CHANEL">CHANEL</option>
+                        <option value="Chopard">Chopard</option>
+                        <option value="Concord">Concord</option>
+                        <option value="Corum">Corum</option>
+                        <option value="David Yurman">David Yurman</option>
+                        <option value="Ebel">Ebel</option>
+                        <option value="FP Journe">FP Journe</option>
+                        <option value="Franck Muller">Franck Muller</option>
+                        <option value="Girard Perregaux">Girard Perregaux</option>
+                        <option value="Glashutte">Glashutte</option>
+                        <option value="Graham">Graham</option>
+                        <option value="Harry Winston">Harry Winston</option>
+                        <option value="Hermes">Hermes</option>
+                        <option value="Hublot">Hublot</option>
+                        <option value="IWC">IWC</option>
+                        <option value="Jaeger LeCoultre">Jaeger LeCoultre</option>
+                        <option value="Longines">Longines</option>
+                        <option value="Louis Vuitton">Louis Vuitton</option>
+                        <option value="Montblanc">Montblanc</option>
+                        <option value="OMEGA">OMEGA</option>
+                        <option value="Oris">Oris</option>
+                        <option value="Panerai">Panerai</option>
+                        <option value="Piaget">Piaget</option>
+                        <option value="TAG Heuer">TAG Heuer</option>
+                        <option value="Tiffany &amp; Co.">Tiffany &amp; Co.</option>
+                        <option value="Tudor">Tudor</option>
+                        <option value="Ulysse Nardin">Ulysse Nardin</option>
+                        <option value="Universal Geneve">Universal Geneve</option>
+                        <option value="Vacheron Constantin">Vacheron Constantin</option>
+                        <option value="Van Cleef &amp; Arpels">Van Cleef &amp; Arpels</option>
+                        <option value="Zenith">Zenith</option>
+                        <option value="Other">Other</option>
+                      </select>
+                </div>
+                <div class="form-group">
+                    <label for="modelName">Model Name (optional):</label>
+                    <input name="modelName" type="text" id="modelName" placeholder="Please enter the Model Name" size="35" onFocus="this.value=''">
+                </div>
+                <div class="form-group">
+                    <label for="modelNum">Model Number (optional):</label>
+                    <input name="modelNum" type="text" id="modelNum" placeholder="Please enter the Model Number" size="35" onFocus="this.value=''">
+                </div>
+                <div class="form-group">
+                    <label for="serial">Serial Number (optional):</label>
+                    <input name="serial" type="text"id="serial" placeholder="Please enter serial Number" size="35" maxlength="35" onFocus="this.value=''">
+                </div>
+                <div class="form-group">
+                    <label for="comesWith">With Papers and Box?</label>
+                    <select name="comesWith" id="comesWith" >
+                      <option selected="selected">Please select</option>
+                      <option value="Box Only">Box Only</option>
+                      <option value="Papers Only">Papers Only</option>
+                      <option value="Box &amp; Papers">Box &amp; Papers</option>
+                      <option value="Neither">Neither</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Additional Information about the Watch:</label>
+                    <textarea name="comments" id="comments" style="resize: vertical; min-height: 100px;"></textarea>
+                </div>
+                <div class="form-group">
+                    <h2><b>Please include contact info</b></h2>
+                    <label for="fname2" class="style7"><strong>First Name:</strong></label>
+                    <input name="fname" required type="text" id="fname2" size="30" maxlength="12" />
+                </div>
+                <div class="form-group">
+                    <label for="lname2" class="style7"><strong>Last Name:</strong></label>
+                    <input name="lname" type="text" id="lname2" size="30" maxlength="12" />
+                </div>
+                <div class="form-group">
+                    <label for="phone2" class="style7"><strong>Phone:</strong></label>
+                    <input name="phone" required type="text" id="phone2" size="20" maxlength="20" />
+                </div>
+                <div class="form-group">
+                    <label for="visitormail2" class="style7"><strong>Email:</strong></label>
+                    <input name="visitormail" required type="text" id="visitormail2" size="30" maxlength="30" />
+                </div>
+                <div class="form-group">
+                    <label class="style7"><strong>Please contact me by:</strong></label>
+                    <span class="style7">
+                      <input class="bgnorm" type="radio" name="howto" value="email" /> E-mail
+                      <input class="bgnorm" type="radio" name="howto" value="phone" /> Phone
+                    </span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" name="submit" id="submit" value="Submit For Free Cash Quote">
+                    <p>With over 23 years service in buying and selling fine diamonds we make it secure, easy and quick to get cash for your diamonds.</p>
+                    <p>If you have any questions, call or fill out this confidential form. If you are ready to sell your diamond for the best price, or just want to know what your diamond is worth, our <b>professional diamond buyers</b> are ready to give you a FREE Quote.</p>
+                    <p>If you have a question before you fill out this form, then call us at 877-327-8150 or <a href="contact.htm"><b>Contact Us - to Sell a Diamond!</b></a></p>
+                </div>
+            </form>
+      </main>
+      <div class="contact-info">
+        <h3>Call for an appointment:</h3>
+        <p>(619) 232-1221</p>
+        <p>(877) 327-8150</p>
+        <h3>Email us at:</h3>
+        <p><a href="mailto:info@SanDiegoDiamondsBuyer.com">info@SanDiegoDiamondsBuyer.com</a></p>
+     </div>
+     <footer>
+        <div class="style3" id="footer">© San Diego Diamonds Buyer. 2008-2021 All rights reserved.</div>
+     </footer>
+     <script src="nav.js"></script>
+   </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Your Jewelry Company</title>
+      <link rel="stylesheet" href="index_test.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   </head>
+   <body>
+      <header>
+          <div class="topnav">
+             <!-- Navigation links (hidden by default) -->
+             <div id="nav-links">
+                <a href="index_test.htm">Home</a>
+                <a href="redesigned_diamondquote.htm">Sell a Diamond</a>
+                <a href="sellYourJewelry_test.html">Sell Jewelry</a>
+                <a href="watchQuote_test.htm">Sell a Fine Watch</a>
+                <a href="sellYourHandbag_test.html">Sell Handbag</a>
+                <a href="contact_test.html">Contact Us</a>
+             </div>
+             <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+             <a href="javascript:void(0);" class="hamburger-menu" onclick="toggleNav()">
+             <i class="fa fa-bars"></i>
+             </a>
+          </div>
+       </header>
+       <div class="center-image">
+         <img src="Images/banner_remove_bg.png" alt="Banner Image" class="desktop-image">
+      </div>
+      <main class="quote-form-section">
+         <div class="services">
+            <div class="services-header">
+               <h1>Sell Your Designer Handbag - San Diego</h1>
+               <h2>Submit your details for a personalized quote</h2>
+               <p>With over 23 years of experience purchasing designer handbags and luxury accessories, we ensure a safe, secure, quick, and seamless process for you to receive cash for your items. If you'd like a quote for your designer handbag, click the <b>Submit For Free Cash Quote Button.</b></p>
+               <p>As professional <b>Designer Handbag Buyers</b>, we recognize that you might have inquiries or wish to learn more about our handbag purchasing services. Fill out the form below and click Submit.</p>
+            </div>
+            <form action="ughsoutD.php" method="post">
+               <div class="form-group">
+                  <h2><b>Please include contact info</b></h2>
+                  <label for="fname">First Name:</label>
+                  <input name="fname" required type="text" id="fname">
+               </div>
+               <div class="form-group">
+                  <label for="lname">Last Name:</label>
+                  <input name="lname" type="text" id="lname">
+               </div>
+               <div class="form-group">
+                  <label for="phone">Phone:</label>
+                  <input name="phone" required type="text" id="phone">
+               </div>
+               <div class="form-group">
+                  <label for="visitormail">Email:</label>
+                  <input name="visitormail" required type="text" id="visitormail">
+               </div>
+               <div class="form-group">
+                  <label for="howto">Please contact me by:</label>
+                  <input class="bgnorm" type="radio" name="howto" value="email"> E-mail
+                  <input class="bgnorm" type="radio" name="howto" value="phone"> Phone
+               </div>
+               <div class="form-group">
+                <label for="comments">Handbag Description:</label>
+                <textarea name="comments" id="comments"></textarea>
+             </div>
+               <div class="form-group">
+                  <input type="submit" name="submit" id="submit" value="Submit For Free Cash Quote">
+                  <p>We appreciate you taking the time to fill out our Contact Form and we will get back to you as soon as possible.</p>
+                  <!-- <p>With over 23 years service in buying and selling fine diamonds we make it secure, easy and quick to get cash for your diamonds.</p>
+                  <p>If you have any questions, call or fill out this confidential form. If you are ready to sell your diamond for the best price, or just want to know what your diamond is worth, our <b>professional diamond buyers</b> are ready to give you a FREE Quote.</p>
+                  <p>If you have a question before you fill out this form, then call us at 877-327-8150 or <a href="contact.htm"><b>Contact Us - to Sell a Diamond!</b></a></p> -->
+               </div>
+            </form>
+         </div>
+      </main>
+      <div class="contact-info">
+         <h3>Call for an appointment:</h3>
+         <p>(619) 232-1221</p>
+         <p>(877) 327-8150</p>
+         <h3>Email us at:</h3>
+         <p><a href="mailto:info@SanDiegoDiamondsBuyer.com">info@SanDiegoDiamondsBuyer.com</a></p>
+      </div>
+      <footer>
+         <div class="style3" id="footer">© San Diego Diamonds Buyer. 2008-2021 All rights reserved.</div>
+      </footer>
+      <script src="nav.js"></script>
+   </body>
+</html>

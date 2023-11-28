@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Your Jewelry Company</title>
+      <link rel="stylesheet" href="index_test.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   </head>
+   <body>
+      <header>
+          <div class="topnav">
+             <!-- Navigation links (hidden by default) -->
+             <div id="nav-links">
+               <a href="index_test.htm">Home</a>
+               <a href="redesigned_diamondquote.htm">Sell a Diamond</a>
+               <a href="sellYourJewelry_test.html">Sell Jewelry</a>
+               <a href="watchQuote_test.htm">Sell a Fine Watch</a>
+               <a href="sellYourHandbag_test.html">Sell Handbag</a>
+               <a href="contact_test.html">Contact Us</a>
+            </div>
+             <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+             <a href="javascript:void(0);" class="hamburger-menu" onclick="toggleNav()">
+             <i class="fa fa-bars"></i>
+             </a>
+          </div>
+       </header>
+       <div class="center-image">
+         <img src="Images/banner_remove_bg.png" alt="Banner Image" class="desktop-image">
+      </div>
+      <main class="quote-form-section">
+         <div class="services">
+            <div class="services-header">
+               <h1>Diamond Quote</h1>
+               <h2>Submit your details for a personalized quote</h2>
+            </div>
+            <form action="ughsoutD.php" method="post">
+               <div class="form-group">
+                  <label for="shape">Shape:</label>
+                  <select name="shape" id="shape">
+                     <option selected="selected">Please select</option>
+                     <option value="Not Sure">I'm Not Sure</option>
+                     <option value="Round/Brilliant">Round/Brilliant</option>
+                     <option value="Princess">Princess</option>
+                     <option value="Cushion">Cushion</option>
+                     <option value="Asscher">Asscher</option>
+                     <option value="Emerald">Emerald</option>
+                     <option value="Heart">Heart</option>
+                     <option value="Marquise">Marquise</option>
+                     <option value="Oval">Oval</option>
+                     <option value="Pear">Pear</option>
+                     <option value="Radiant">Radiant</option>
+                     <option value="Mine/Euro">Mine/European Cut</option>
+                     <option value="Radiant">Radiant</option>
+                     <option value="Square">Square</option>
+                     <option value="Trillion">Trillion</option>
+                     <option value="Triangle">Triangle</option>
+                     <option value="Broken">Broken</option>
+                  </select>
+               </div>
+               <div class="form-group">
+                  <label for="cert">Certification:</label>
+                  <select name="cert" id="cert">
+                     <option>Please select</option>
+                     <option>Yes</option>
+                     <option>No</option>
+                     <option>I'm not sure</option>
+                  </select>
+               </div>
+               <div class="form-group">
+                  <label for="certLab">Certifying Lab:</label>
+                  <select name="certLab" id="certLab">
+                     <option selected="selected">Please select</option>
+                     <option value="AGS">American Gemological Society (AGS)</option>
+                     <option value="EGL">European Gemological Laboratory (EGL)</option>
+                     <option value="GIA">Gemological Institute of America (GIA)</option>
+                     <option value="HRD">Hoge Raad voor Diamant (HRD)</option>
+                     <option value="IGI">International Gemological Institute (IGI)</option>
+                     <option value="Jewelry Store">Jewelry Store Appraisal</option>
+                  </select>
+               </div>
+               <div class="form-group">
+                  <label for="certNum">Certificate Number:</label>
+                  <input name="certNum" type="text" id="certNum" placeholder="Please enter certificate number" onFocus="this.value=''">
+               </div>
+               <div class="form-group">
+                  <label for="weight">Carat Weight:</label>
+                  <input name="weight" type="text" id="weight" placeholder="Please enter carat weight" onFocus="this.value=''">
+               </div>
+               <div class="form-group">
+                  <label for="color">Color:</label>
+                  <select name="color" id="color">
+                     <option selected="selected">Please select</option>
+                     <option value="Not Sure">I'm Not Sure</option>
+                     <option value="D-Colorless">D-Colorless</option>
+                     <option value="E-Colorless">E-Colorless</option>
+                     <option value="F-Colorless">F-Colorless</option>
+                     <option value="G-Near Colorless">G-Near Colorless</option>
+                     <option value="H-Near Colorless">H-Near Colorless</option>
+                     <option value="I-Near Colorless">I-NearColorless</option>
+                     <option value="J-Near Colorless">J-Near Colorless</option>
+                     <option value="K-Commercial White">K-Commercial White</option>
+                     <option value="L-Faint Yellow">L-Faint Yellow</option>
+                     <option value="M-Faint Yellow">M-Faint Yellow</option>
+                     <option value="N-Very Light Yellow">N-Very Light Yellow</option>
+                     <option value="O-Very Light Yellow">O-Very Light Yellow</option>
+                     <option value="P-Very Light Yellow">P-Very Light Yellow</option>
+                     <option value="Q-Very Light Yellow">Q-Very Light Yellow</option>
+                     <option value="R-Very Light Yellow">R-Very Light Yellow</option>
+                     <option value="S-Light Yellow">S-Light Yellow</option>
+                     <option value="T-Light Yellow">T-Light Yellow</option>
+                     <option value="U-Light Yellow">U-Light Yellow</option>
+                     <option value="V-Light Yellow">V-Light Yellow</option>
+                     <option value="W-Light Yellow">W-Light Yellow</option>
+                     <option value="X-Light Yellow">X-Light Yellow</option>
+                     <option value="Y-Light Yellow">Y-Light Yellow</option>
+                     <option value="Z-Light Yellow">Z-Light Yellow</option>
+                     <option value="Fancy">Fancy</option>
+                  </select>
+               </div>
+               <div class="form-group">
+                  <label for="clarity">Clarity:</label>
+                  <select name="clarity" id="clarity">
+                     <option selected="selected">Please select</option>
+                     <option value="Not Sure">I'm Not Sure</option>
+                     <option value="IF">IF (Internally Flawless)</option>
+                     <option value="VVS 1">VVS 1 (Very Very Slightly Included)</option>
+                     <option value="VVS 2">VVS 2 (Very Very Slightly Included)</option>
+                     <option value="VS1">VS1 (Very Slightly Included)</option>
+                     <option value="VS2">VS2 (Very Slightly Included)</option>
+                     <option value="SI-1">SI-1 (Slightly Included)</option>
+                     <option value="SI-2">SI-2 (Slightly Included)</option>
+                     <option value="SI-3">SI-3 (Slightly Included)</option>
+                     <option value="I1">I-1 (Imperfect)</option>
+                     <option value="I-2">I-2 (Imperfect)</option>
+                     <option value="I-3">I-3 (Imperfect)</option>
+                  </select>
+               </div>
+               <div class="form-group">
+                  <label for="comments">Comments, or Diamond Description:</label>
+                  <textarea name="comments" id="comments"></textarea>
+               </div>
+               <div class="form-group">
+                  <h2><b>Please include contact info</b></h2>
+                  <label for="fname">First Name:</label>
+                  <input name="fname" required type="text" id="fname">
+               </div>
+               <div class="form-group">
+                  <label for="lname">Last Name:</label>
+                  <input name="lname" type="text" id="lname">
+               </div>
+               <div class="form-group">
+                  <label for="phone">Phone:</label>
+                  <input name="phone" required type="text" id="phone">
+               </div>
+               <div class="form-group">
+                  <label for="visitormail">Email:</label>
+                  <input name="visitormail" required type="text" id="visitormail">
+               </div>
+               <div class="form-group">
+                  <label for="howto">Please contact me by:</label>
+                  <input class="bgnorm" type="radio" name="howto" value="email"> E-mail
+                  <input class="bgnorm" type="radio" name="howto" value="phone"> Phone
+               </div>
+               <div class="form-group">
+                  <input type="submit" name="submit" id="submit" value="Submit For Free Cash Quote">
+                  <p>With over 23 years service in buying and selling fine diamonds we make it secure, easy and quick to get cash for your diamonds.</p>
+                  <p>If you have any questions, call or fill out this confidential form. If you are ready to sell your diamond for the best price, or just want to know what your diamond is worth, our <b>professional diamond buyers</b> are ready to give you a FREE Quote.</p>
+                  <p>If you have a question before you fill out this form, then call us at 877-327-8150 or <a href="contact_test.html"><b>Contact Us - to Sell a Diamond!</b></a></p>
+               </div>
+            </form>
+         </div>
+      </main>
+      <div class="contact-info">
+         <h3>Call for an appointment:</h3>
+         <p>(619) 232-1221</p>
+         <p>(877) 327-8150</p>
+         <h3>Email us at:</h3>
+         <p><a href="mailto:info@SanDiegoDiamondsBuyer.com">info@SanDiegoDiamondsBuyer.com</a></p>
+      </div>
+      <footer>
+         <div class="style3" id="footer">© San Diego Diamonds Buyer. 2008-2021 All rights reserved.</div>
+      </footer>
+      <script src="nav.js"></script>
+   </body>
+</html>
